@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Yahtzee Game</string>
+    <string name="rollDiceButton">Roll The Dice!</string>
+    <string name="resetGame">Restart</string>
+
+    <string name="ones_button">1\'s</string>
+    <string name="twos_button">2\'s</string>
+    <string name="threes_button">3\'s</string>
+    <string name="fours_button">4\'s</string>
+    <string name="fives_button">5\'s</string>
+    <string name="sixes_button">6\'s</string>
+    <string name="BonusScoreLabel">Bonus</string>
+
+    <string name="ThreeOfKindButton">3 of a Kind</string>
+    <string name="FourOfKindButton">4 of a Kind</string>
+    <string name="SmallStraightButton">Sm. Straight</string>
+    <string name="LargeStraightButton">Lg. Straight</string>
+    <string name="FullHouseButton">Full House</string>
+    <string name="ChanceButton">Chance</string>
+    <string name="YeetzahButton">YEETzah!</string>
+    <string name="YeetzahBonusLabel">YEETzah Bonus!</string>
+
+
+    <string name="UpperTotalLabel">Upper Total</string>
+    <string name="CombinedUpperLabel">Upper Section with Bonus</string>
+    <string name="LowerTotalLabel">Lower Total</string>
+    <string name="GrandTotalLabel">Grand Total</string>
+</resources>
