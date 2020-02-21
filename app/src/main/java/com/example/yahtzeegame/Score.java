@@ -162,39 +162,20 @@ class Straight extends Score {
             tempList.add(i.getDieValue());
         }
         Collections.sort(tempList);
-        if (numberOfDiceToLink == 4) {
-            switch (tempList.get(0)) {
-                case 1:
-                    if (tempList.contains(1) && !tempList.contains(2) && tempList.containsAll(Arrays.asList(3, 4, 5, 6))) {
-                        meetsRule = true;
-                    } else if (tempList.containsAll(Arrays.asList(1, 2, 3, 4))) {
-                        meetsRule = true;
-                    }
-                    break;
-                case 2:
-                    if (tempList.containsAll(Arrays.asList(2, 3, 4, 5))) {
-                        meetsRule = true;
-                    }
-                    break;
-                case 3:
-                    if (tempList.containsAll(Arrays.asList(3, 4, 5, 6))) {
-                        meetsRule = true;
-                    }
-                    break;
-            }
-        } else if (numberOfDiceToLink == 5) {
-            switch (tempList.get(0)) {
-                case 1:
-                    if (tempList.containsAll(Arrays.asList(1, 2, 3, 4, 5))) {
-                        meetsRule = true;
-                    }
-                    break;
-                case 2:
-                    if (tempList.containsAll(Arrays.asList(2, 3, 4, 5, 6))) {
-                        meetsRule = true;
-                    }
-                    break;
-            }
+        switch (numberOfDiceToLink) {
+            case 4:
+                if (tempList.containsAll(Arrays.asList(1, 2, 3, 4)) ||
+                        tempList.containsAll(Arrays.asList(2, 3, 4, 5)) ||
+                        tempList.containsAll(Arrays.asList(3, 4, 5, 6))) {
+                    meetsRule = true;
+                }
+                break;
+            case 5:
+                if (tempList.containsAll(Arrays.asList(1, 2, 3, 4, 5)) ||
+                        tempList.containsAll(Arrays.asList(2, 3, 4, 5, 6))) {
+                    meetsRule = true;
+                }
+                break;
         }
         return meetsRule;
     }
